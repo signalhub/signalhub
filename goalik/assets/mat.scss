@@ -1,0 +1,91 @@
+/*
+http://mcg.mbitson.com/#!?mcgpalette0=%23009200
+*/
+@import '../../node_modules/@angular/material/theming';
+
+@include mat-core();
+
+$mdc-theme-primary: #009200;
+$mdc-theme-secondary: #5dbd00;
+
+$my-primary: (
+        50 : #e0f1e0,
+        100 : #b3dcb3,
+        200 : #80c580,
+        300 : #4dad4d,
+        400 : #269c26,
+        500 : #008a00,
+        600 : #008200,
+        700 : #007700,
+        800 : #006d00,
+        900 : #005a00,
+        A100 : #8bff8b,
+        A200 : #58ff58,
+        A400 : #25ff25,
+        A700 : #0cff0c,
+        contrast: (
+                50 : #6c6c6c,
+                100 : #6c6c6c,
+                200 : #6c6c6c,
+                300 : #6c6c6c,
+                400 : #ffffff,
+                500 : #ffffff,
+                600 : #ffffff,
+                700 : #ffffff,
+                800 : #ffffff,
+                900 : #ffffff,
+                A100 : #6c6c6c,
+                A200 : #6c6c6c,
+                A400 : #6c6c6c,
+                A700 : #6c6c6c,
+        )
+);
+
+$my-accent: (
+        50 : #ffffff,
+        100 : #fffbbd,
+        200 : #fff785,
+        300 : #fff33d,
+        400 : #fff11f,
+        500 : #ffef00,
+        600 : #e0d200,
+        700 : #c2b600,
+        800 : #a39900,
+        900 : #857c00,
+        A100 : #ffffff,
+        A200 : #fff999,
+        A400 : #fff233,
+        A700 : #fff11a,
+        contrast: (
+                50 : #6c6c6c,
+                100 : #6c6c6c,
+                200 : #6c6c6c,
+                300 : #6c6c6c,
+                400 : #6c6c6c,
+                500 : #6c6c6c,
+                600 : #6c6c6c,
+                700 : #6c6c6c,
+                800 : #6c6c6c,
+                900 : #ffffff,
+                A100 : #6c6c6c,
+                A200 : #6c6c6c,
+                A400 : #6c6c6c,
+                A700 : #6c6c6c,
+        )
+);
+
+.mat-form-field-flex {
+        .mat-form-field-outline-thick {
+                color: $mdc-theme-primary !important;
+        }
+}
+
+//the first two are the custom palettes we declared above
+$my-theme-primary: mat-palette($my-primary);
+$my-theme-accent: mat-palette($my-accent);
+//the third, for the warn color, is the predefined material red palette
+$my-theme-warn: mat-palette($mat-red);
+
+$my-theme: mat-light-theme($my-theme-primary, $my-theme-accent, $my-theme-warn);
+
+@include angular-material-theme($my-theme);

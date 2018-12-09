@@ -1,0 +1,119 @@
+@import "./vars.styl";
+
+
+.content__headline
+  display flex
+
+.b-layout
+  &__container
+    border 1px solid rgba(0, 0, 0, 0.15)
+    border-radius .55rem
+    margin 1em
+.page-layout
+  padding 1rem 2rem
+  &__header
+    border-bottom 3px solid #009f00
+    text-align center
+    display flex
+  &__container
+    display flex
+    padding 0 0 0 1rem
+  &__right-side
+    width 25%
+    border 1px solid rgba(0, 0, 0, 0.15)
+    border-radius .75rem
+    margin 1rem
+  &__left-side
+    padding 1rem
+    width 75%
+    border 1px solid rgba(0, 0, 0, 0.15)
+    border-radius .75rem
+    margin 1rem
+    &.sector-clear
+      border none
+      margin 0
+      padding 0.5rem 0
+
+.b_widget
+  &__title
+    padding 0.5rem 1rem
+    color white
+    background #009200
+    &--top
+      border-top-left-radius 0.75rem
+      border-top-right-radius 0.75rem
+  &__content
+    padding 1rem
+
+.b-item-inline
+  font-size 1.4rem
+  &__control
+    display inline-flex
+    margin-right .5rem
+  &__border
+    border-bottom: 2px solid #009d00
+  &__right
+    text-align right
+
+.block-content
+  &--inline
+    display inline-flex
+    flex 1 1 auto
+    justify-content flex-start
+    align-items center
+    &__end
+      float right
+      justify-content flex-end
+      margin-right 0.2rem
+    &__center
+      justify-content center
+.color-picker
+  width 150px
+
+.mat-form-field {
+  line-height: 1.425;
+}
+
+
+@media (max-width 800px)
+  .page-layout
+    &__header
+      text-align left
+      h2
+        font-size 1.7rem
+    &__left-side
+      width 60%
+    &__right-side
+      width 40%
+
+
+@media (max-width 500px)
+  .modal-title
+    margin-bottom 0
+    line-height 1
+    font-size 1.2rem
+    font-weight 400
+  .b-layout
+    &__container
+      margin 0
+      border-radius .35rem
+
+  .page-layout
+    padding 4rem 2rem 2rem
+    &__container
+      padding 0
+    &__base
+      padding 4rem 1rem 0
+    &__header
+      text-align left
+      margin-bottom .5rem
+      h2
+        font-size 1.3rem
+    &__left-side
+      width 100%
+      margin 1rem 0
+    &__right-side
+      display none
+  .demo-content
+    margin 0
+    padding 0.5rem
