@@ -12,9 +12,10 @@
 .page-layout
   padding 1rem 2rem
   &__header
-    border-bottom 3px solid #009f00
+    border-top 3px solid #009f00
     text-align center
     display flex
+    margin 0 1rem
   &__container
     display flex
     padding 0 0 0 1rem
@@ -67,6 +68,9 @@
       margin-right 0.2rem
     &__center
       justify-content center
+    &__left
+      padding-top 1.5rem
+      justify-content left
 .color-picker
   width 150px
 
@@ -106,7 +110,8 @@
       padding 4rem 1rem 0
     &__header
       text-align left
-      margin-bottom .5rem
+      border none
+      margin 0
       h2
         font-size 1.3rem
     &__left-side
@@ -117,3 +122,11 @@
   .demo-content
     margin 0
     padding 0.5rem
+
+  .block-content
+    &--inline
+
+      &__left
+        margin 0
+        padding 0
+        justify-content left

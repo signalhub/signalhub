@@ -7,7 +7,6 @@ $mdc-theme-background: #fff;
 .mdc-top-app-bar__title {
   color: white;
   text-shadow: 1px 1px 2px #818181;
-  font-size: 1rem;
 }
 
 .mdc-tab-scroller--align-end,
@@ -96,9 +95,6 @@ $mdc-theme-background: #fff;
 // Card styles
 //
 
-.mdc-card__primary-action:first-child {
-  border-radius: 4px;
-}
 
 
 .demo-card__primary {
