@@ -10,30 +10,33 @@
     border-radius .55rem
     margin 1em
 .page-layout
-  padding 1rem 2rem
+  padding 0 2rem
   &__header
-    border-top 3px solid #009f00
-    text-align center
-    display flex
-    margin 0 1rem
+    border-radius: .5rem;
+    border 1px solid rgb(0, 159, 0)
+    padding-left: 2rem;
+    text-align: center;
+    display: flex;
+    margin: 0 1rem;
+    //box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12)
   &__container
     display flex
     padding 0 0 0 1rem
   &__right-side
     width 25%
-    border 1px solid rgba(0, 0, 0, 0.15)
+    border 1px solid rgb(0, 159, 0)
     border-radius .75rem
-    margin .5rem 1rem
+    margin 1rem
   &__left-side
     padding 1rem
     width 75%
-    border 1px solid rgba(0, 0, 0, 0.15)
+    border 1px solid rgb(0, 159, 0)
     border-radius .75rem
-    margin 1rem
+    margin 1rem 0
     &.sector-clear
       border none
       margin 0
-      padding 0.5rem 0
+      padding 1rem 0
 
 .b_widget
   &__title
@@ -70,6 +73,7 @@
       justify-content center
     &__left
       padding-top 1.5rem
+      padding-bottom 1rem
       justify-content left
 .color-picker
   width 150px
@@ -83,6 +87,7 @@
   .page-layout
     &__header
       text-align left
+      padding-left 0
       h2
         font-size 1.7rem
     &__left-side
@@ -115,6 +120,7 @@
       text-align left
       border none
       margin 0
+      padding-left 0
       h2
         font-size 1.3rem
     &__left-side
