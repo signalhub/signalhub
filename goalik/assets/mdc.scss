@@ -7,11 +7,11 @@ $mdc-theme-background: #fff;
 .mdc-top-app-bar__title {
   color: white;
   text-shadow: 1px 1px 2px #818181;
+  font-size: 1.4rem;
 }
 
 .mdc-tab-scroller--align-end,
 .mdc-tab-scroller__scroll-content {
-  padding-top: 3rem;
   background: white;
 }
 
@@ -248,3 +248,32 @@ $mdc-theme-background: #fff;
     margin-bottom: .3em;
   }
 }
+
+.mdc-top-app-bar {
+  left: 0;
+}
+
+.mdc-tab-scroller__scroll-area {
+  z-index: 10;
+  width: 100%;
+  position: fixed;
+  top: 48px;
+  left: 0;
+  background: white;
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+}
+
+.mdc-tab-scroller__scroll-content {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.mdc-top-app-bar__section {
+  padding: 0 1rem;
+}
+
+.mdc-top-app-bar__row {
+  height: 64px;
+}
+
+
