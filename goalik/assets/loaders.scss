@@ -72,6 +72,15 @@
     top:15px;
 }
 
+.ball-loader {
+    transform: rotate(0deg);
+    background: url("./images/loader_ball.png") no-repeat;
+    width: 60px;
+    height: 60px;
+    background-size: contain;
+    animation: icon 1s infinite;
+}
+
 @keyframes icon {
     to { transform:rotate(360deg); }
 }
